@@ -1,0 +1,59 @@
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="divLogo">
+                <a class="navbar-brand" href="{{ path('home') }}">
+                    <img class="logo" src="{{ asset('img/logoHollux3blanc.png') }}" alt="logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="{% if app.request.attributes.get('_route') == 'home' %}active{% endif %}">
+                    <a href="{{ path('home') }}">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="{% if app.request.attributes.get('_route') == 'CV' %}active{% endif %}">
+                    <a data-link="CV" href="{{ path('CV') }}">CV</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Mes réalisations <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.solveigdc.fr/" target="_blank">Solveig De Cuyper</a></li>
+                        <li><a href="http://www.haricotdecastelnaudary.fr/" target=_blank>Haricot</a></li>
+                        <li><a href="http://www.ludotheque-horbourg-wihr.net/" target=_blank>Ludo</a></li>
+                        <li><a href="https://www.chroniquesdewaral.fr/" target="_blank">Chroniques de Waral</a></li>
+                        <li role="separator" class="divider"></li>
+
+                        <li class="barre"><a href="#">Chat alors</a></li>
+                        <li class="barre"><a href="#">Forum ipsum</a></li>
+                        <li  class="barre"><a href="#">List Builder</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="{% if app.request.attributes.get('_route') == 'infoPerso' %}active{% endif %}">
+                    <a data-link="infoPerso" class="bouton" href="{{ path('infoPerso') }}">Infos perso</a>
+                </li>
+
+                <li class="{% if app.request.attributes.get('_route') == 'meContacter' %}active{% endif %}">
+                    <a href="{{ path('meContacter') }}">Me contacter</a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
