@@ -1,27 +1,27 @@
 <?php
 namespace App\Form\Tools;
 
-use AppBundle\CustomeValidator\ContainsReCaptcha;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class ReCaptchaType extends AbstractType
 {
-    private $recaptchaPublicKey;
-    private $recaptchaPrivateKey;
+    //TODO retrouver comment gérer les key dans parameters.yml
+    /*private $recaptchaPublicKey = "xxxxxxxxxxxxxx";
+    private $recaptchaPrivateKey = "xxxxxxxxxxxxxxx";
 
-    public function __construct($recaptchaPublicKey, $recaptchaPrivateKey)
+    public function __construct(string $recaptchaPublicKey, string $recaptchaPrivateKey)
     {
         $this->recaptchaPublicKey = $recaptchaPublicKey;
         $this->recaptchaPrivateKey = $recaptchaPrivateKey;
-    }
+    }*/
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add('gRecaptchaResponse', Type\HiddenType::class,
-                [   'constraints' => [new ContainsReCaptcha(['recaptchaPrivateKey' => $this->recaptchaPrivateKey])],
+                [   'constraints' => [new ContainsRecaptcha(['recaptchaPrivateKey' => "xxxxxxxxxxxxx"])],
                     'attr' => [
                         'class' => 'g-recaptcha-response'
                     ]])
@@ -29,7 +29,7 @@ class ReCaptchaType extends AbstractType
                 [
                     'attr' => [
                         'class' => 'btn btn-primary g-recaptcha',
-                        'data-sitekey' => $this->recaptchaPublicKey,
+                        'data-sitekey' => "xxxxxxxxxxxx",
                         'data-callback' => "onSubmit"]])
         ;
     }

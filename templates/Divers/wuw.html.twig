@@ -1,0 +1,27 @@
+{% extends "Hollux/Base/base.html.twig" %}
+
+{% block principal %}
+
+    <h1>What u want</h1>
+    <p>Rapide formulaire(s) titre / content</p>
+
+    {{ form_start(form2) }}
+     {{ form_widget(form2) }}
+    {{ form_end(form2) }}
+
+    <p>/////////////////////////////</p>
+
+    {{ form_label(form.forms) }}
+    {{ form_errors(form.forms) }}
+
+    <ul>
+        {% for form in form.forms %}
+            <li>
+                {{ form_errors(form) }}
+                {{ form_widget(form) }}
+            </li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

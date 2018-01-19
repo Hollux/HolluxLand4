@@ -36,18 +36,18 @@ class HolluxController extends AbstractController
 
 
     /**
-     * @Route("/CV", name="CV")
+     * @Route("/cv", name="cv")
      */
-    public function CV()
+    public function cv()
     {
 
         return [];
     }
 
     /**
-     * @Route("/infoPerso", name="infoPerso")
+     * @Route("/infoperso", name="infoperso")
      */
-    public function infoPerso()
+    public function infoperso()
     {
 
         return [];
@@ -63,9 +63,9 @@ class HolluxController extends AbstractController
     }
 
     /**
-     * @Route("/mecontacter", name="meContacter")
+     * @Route("/mecontacter", name="mecontacter")
      */
-    public function meContacter(Request $request)
+    public function mecontacter(Request $request)
     {
         //TODO réduire l'intéligence
         $form = $this->createForm(Form\Hollux\MeContacterType::class);
