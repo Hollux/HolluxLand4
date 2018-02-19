@@ -41,7 +41,7 @@
 <div class="container">
     <br>
 
-    {{ include('Hollux/Base/nav.html.twig') }}
+    {{ include('hollux/Base/nav.html.twig') }}
 
     {% for flash_message in app.session.flashBag.get('error') %}
         <div class="flash-notice flash-bg-red">
@@ -59,7 +59,7 @@
     <br>
 </div>
 
-{{ include('Hollux/Base/footer.html.twig') }}
+{{ include('hollux/Base/footer.html.twig') }}
 
 <!--    POLICE -->
 <link  href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic') }}" rel='stylesheet' type='text/css'>
