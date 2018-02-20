@@ -18,10 +18,20 @@ use App\Component\Mailer\Message;
 class HolluxController extends AbstractController
 {
     /**
+     * @Route("/cv", name="cv")
+     */
+    public function cv()
+    {
+
+        return [];
+    }
+
+    /**
      * @Route("/", name="home")
      */
     public function index()
     {
+
         return [];
     }
 
@@ -34,15 +44,6 @@ class HolluxController extends AbstractController
         return [];
     }
 
-
-    /**
-     * @Route("/cv", name="cv")
-     */
-    public function cv()
-    {
-
-        return [];
-    }
 
     /**
      * @Route("/infoperso", name="infoperso")
