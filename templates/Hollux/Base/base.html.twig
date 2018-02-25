@@ -38,11 +38,7 @@
 
 <body>
 <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
-<div class="container">
-    <br>
-
-    {{ include('hollux/Base/nav.html.twig') }}
-
+{{ include('hollux/Base/nav.html.twig') }}
     {% for flash_message in app.session.flashBag.get('error') %}
         <div class="flash-notice flash-bg-red">
             <p>{{ flash_message }}</p>
@@ -57,7 +53,6 @@
 
     {% block principal %}{% endblock %}
     <br>
-</div>
 
 {{ include('hollux/Base/footer.html.twig') }}
 

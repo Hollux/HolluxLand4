@@ -188,7 +188,7 @@ img {
 //	 BASE HOLLUX     //
 ==================== */
 body {
-  background: url("../../../img/BG3.jpg"); }
+  /*background: url("../../../img/BG3.jpg"); }*/
 .container {
   background-color: white;
   min-height: calc(100vh - 50px);
@@ -204,6 +204,15 @@ body {
 .navbar-nav > li > a {
   line-height: 25px;
   font-size: 18px; }
+
+.navbar {
+  border-radius:0;
+}
+
+.navbar-inverse {
+  background-color: #22222287;
+  border: none;
+}
 
 .barre {
   text-decoration: line-through; }
@@ -286,17 +295,17 @@ body {
         right: -100%;
         transition: all .6s ease-in-out .2s; }
   .post .post-content1 {
-    background-image: url("../../../img/ludoWp.jpg"); }
+    background-image: url("/img/ludoWp.jpg"); }
   .post .post-content2 {
-    background-image: url("../../../img/haricotfr.jpg"); }
+    background-image: url("/img/haricotfr.jpg"); }
   .post .post-content3 {
-    background-image: url("../../../img/solveigdcfr.jpg"); }
+    background-image: url("/img/solveigdcfr.jpg"); }
   .post .post-content4 {
-    background-image: url("../../../img/chroniquesfr.jpg"); }
+    background-image: url("/img/chroniquesfr.jpg"); }
   .post .post-content5 {
-    background-image: url("../../../img/site1.jpg"); }
+    background-image: url("/img/site1.jpg"); }
   .post .post-content6 {
-    background-image: url("../../../img/wonder2.jpg"); }
+    background-image: url("/img/wonder2.jpg"); }
 
 .post:hover .post-content {
   transform: scale(1.1); }
@@ -383,7 +392,7 @@ body {
 //	    FOOTER       //
 ==================== */
 footer {
-  background-color: #222222;
+  background-color: #333333;
   color: white;
  /* min-height: 5%;
   width: 100%; }
@@ -395,6 +404,27 @@ footer {
   footer .footerB {
     vertical-align: top; */}
 
+footer .container {
+  background-color:#333333;
+  min-height:50px;
+}
+footer .container a img {
+  float: left;
+  margin-left: -15px;
+}
+footer .container .footer {
+  text-align:right;
+  margin-top:16px;
+}
+footer .container .footer p a, footer .container .footer p {
+  color:#9d9d9d;
+  text-decoration:none;
+}
+footer .container .footer p a:hover, footer .container .footer p a:focus, footer .container .footer p a:active {
+  text-decoration:none;
+  color:white;
+}
+
 /* SCROLLUP */
 /* SCROLLUP */
 .scrollup {
@@ -403,7 +433,7 @@ footer {
   height: 40px;
   position: fixed;
   bottom: 15%;
-  right: 15%;
+  right: 5%;
   display: none;
   color: #C815D7;
   background: url(../../../img/fleche_haut_blanc.png);
