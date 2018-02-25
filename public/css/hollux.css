@@ -188,7 +188,7 @@ img {
 //	 BASE HOLLUX     //
 ==================== */
 body {
-  background: url("../../../img/BG3.jpg"); }
+  }
 .container {
   background-color: white;
   min-height: calc(100vh - 50px);
