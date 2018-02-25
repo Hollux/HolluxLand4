@@ -64,6 +64,15 @@ class HolluxController extends AbstractController
     }
 
     /**
+     * @Route("/realisations", name="realisations")
+     */
+    public function realisations()
+    {
+
+        return [];
+    }
+
+    /**
      * @Route("/mecontacter", name="mecontacter")
      */
     public function mecontacter(Request $request)

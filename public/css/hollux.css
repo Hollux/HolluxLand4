@@ -188,7 +188,7 @@ img {
 //	 BASE HOLLUX     //
 ==================== */
 body {
-  /*background: url("../../../img/BG3.jpg"); }*/
+}
 .container {
   background-color: white;
   min-height: calc(100vh - 50px);
@@ -210,7 +210,7 @@ body {
 }
 
 .navbar-inverse {
-  background-color: #22222287;
+  background-color: rgba(34, 34, 34, 0.95);
   border: none;
 }
 
@@ -295,17 +295,11 @@ body {
         right: -100%;
         transition: all .6s ease-in-out .2s; }
   .post .post-content1 {
-    background-image: url("/img/ludoWp.jpg"); }
+    background-image: url("/img/realisations/ludoWp.jpg"); }
   .post .post-content2 {
-    background-image: url("/img/haricotfr.jpg"); }
+    background-image: url("/img/realisations/haricotfr.jpg"); }
   .post .post-content3 {
-    background-image: url("/img/solveigdcfr.jpg"); }
-  .post .post-content4 {
-    background-image: url("/img/chroniquesfr.jpg"); }
-  .post .post-content5 {
-    background-image: url("/img/site1.jpg"); }
-  .post .post-content6 {
-    background-image: url("/img/wonder2.jpg"); }
+    background-image: url("/img/realisations/solveigdcfr.jpg"); }
 
 .post:hover .post-content {
   transform: scale(1.1); }
@@ -319,6 +313,9 @@ body {
 /* ====================
 //	     HOME        //
 ==================== */
+.bandeau {
+  margin-top: -75px;
+}
 .home .imgSites .post {
   width: 100%;
   height: 200px;
