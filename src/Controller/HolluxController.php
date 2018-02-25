@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Hollux\RealisationFactory;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,6 +18,12 @@ use App\Component\Mailer\Message;
  */
 class HolluxController extends AbstractController
 {
+
+    public function __construct(RealisationFactory $realisationFactory)
+    {
+        $this->realisations = $realisationFactory;
+    }
+
     /**
      * @Route("/cv", name="cv")
      */
@@ -68,8 +75,9 @@ class HolluxController extends AbstractController
      */
     public function realisations()
     {
+        $realisations = $this->realisations->getRealisations();
 
-        return [];
+        return ['realisations' => $realisations];
     }
 
     /**
