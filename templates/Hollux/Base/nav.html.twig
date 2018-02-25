@@ -1,3 +1,4 @@
+{% set page =  app.request.attributes.get('_route') %}
 <nav class="navbar navbar-default navbar-inverse">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -19,10 +20,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="{% if app.request.attributes.get('_route') == 'home' %}active{% endif %}">
+                <li class="{{ (page == 'home') ? 'active' }}">
                     <a href="{{ path('home') }}">Accueil<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="dropdown {% if app.request.attributes.get('_route') == 'competences' %}active{% elseif app.request.attributes.get('_route') == 'cv' %}active{% endif %}">
+                <li class="dropdown {{ (page == 'competences') or (page == 'cv') ? 'active' }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Hollux<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -31,9 +32,9 @@
                         <li><a data-link="infoperso" class="bouton" href="{{ path('infoperso') }}">En savoir plus</a></li>
                     </ul>
                 </li>
-                <li class=""><a href="#">Réalisations</a></li>
+                <li class="{{ (page == 'realisations') ? 'active' }}"><a href="{{ path('realisations') }}">Réalisations</a></li>
                 {#<li class=""><a href="#">Bundles</a></li>#}
-                <li class="{% if app.request.attributes.get('_route') == 'mecontacter' %}active{% endif %}">
+                <li class="{% if page == 'mecontacter' %}active{% endif %}">
                     <a href="{{ path('mecontacter') }}">Contact</a>
                 </li>
             </ul>
