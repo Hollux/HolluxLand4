@@ -1,20 +1,15 @@
-<footer class="container-fluid">
+<footer class="container container-fluid">
     <div class="row">
-        <div class="col-xs-3 text-center">
+        <div class="col-xs-4 col-sm-4">
             <a href="{{ path('home') }}">
                 <img class="m0auto" src="{{ asset ('img/logoHollux3blanc.png') }}" alt="logo">
             </a>
         </div>
-        <div class="col-xs-3 text-center">
-            <p>&#169 2016 Adrien MARCHAND - Tous droits réservés.</p>
+        <div class="col-xs-8 col-sm-8 footer">
+            <p>&#169 2016 Adrien MARCHAND - Tous droits réservés - <a href="{{ path('home') }}">Accueil</a> - <a href="{{ path('mentionslegales') }}">Mentions légales</a></p>
         </div>
-        <div class="col-xs-3 text-center">
-            <a href="{{ path('home') }}"><b>Accueil</b></a>
-            <a class="barre" href="#"><b>Glossaire</b></a>
-        </div>
-        <div class="col-xs-3 text-center">
+      {#  <div class="col-xs-3 text-center">
             <p>www.hollux.fr</p>
-            <a class="barre" href="#">Mentions légales</a>
-        </div>
+        </div>#}
     </div>
 </footer>

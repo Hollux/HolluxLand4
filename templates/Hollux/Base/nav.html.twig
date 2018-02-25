@@ -22,17 +22,24 @@
                 <li class="{% if app.request.attributes.get('_route') == 'home' %}active{% endif %}">
                     <a href="{{ path('home') }}">Accueil<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="dropdown {% if app.request.attributes.get('_route') == 'competences' %}active{% elseif app.request.attributes.get('_route') == 'cv' %}active{% endif %}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Hollux<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-link="cv" href="{{ path('cv') }}">CV</a></li>
+                        <li><a data-link="competences" href="{{ path('competences') }}">Compétences</a></li>
+                        <li><a data-link="infoperso" class="bouton" href="{{ path('infoperso') }}">En savoir plus</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#">Réalisations</a></li>
+                {#<li class=""><a href="#">Bundles</a></li>#}
+                <li class="{% if app.request.attributes.get('_route') == 'mecontacter' %}active{% endif %}">
+                    <a href="{{ path('mecontacter') }}">Contact</a>
+                </li>
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li class="{% if app.request.attributes.get('_route') == 'cv' %}active{% endif %}">
-                    <a data-link="cv" href="{{ path('cv') }}">CV</a>
-                </li>
-
-                <li class="{% if app.request.attributes.get('_route') == 'competences' %}active{% endif %}">
-                    <a data-link="competences" href="{{ path('competences') }}">Competences</a>
-                </li>
-
-                <li class="dropdown">
+           {#     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Mes réalisations <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -47,16 +54,7 @@
                         <li  class="barre"><a href="#">List Builder</a></li>
 
                     </ul>
-                </li>
-
-                <li class="{% if app.request.attributes.get('_route') == 'infoperso' %}active{% endif %}">
-                    <a data-link="infoperso" class="bouton" href="{{ path('infoperso') }}">Infos perso</a>
-                </li>
-
-                <li class="{% if app.request.attributes.get('_route') == 'mecontacter' %}active{% endif %}">
-                    <a href="{{ path('mecontacter') }}">Me contacter</a>
-                </li>
-
+                </li>#}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Divers<span class="caret"></span></a>
