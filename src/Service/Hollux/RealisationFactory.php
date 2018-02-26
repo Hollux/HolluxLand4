@@ -10,31 +10,31 @@ class RealisationFactory
     const externes = [
         'solveigdc' => [
             'img' => 'solveigdcfr.jpg' ,
-            'imgAlt' => 'solveigdc',
-            'title' => 'Solveig DeCuyper : le site',
+            'imgAlt' => 'Hollux - site Solveig De Cuyper',
+            'title' => 'Solveig De Cuyper',
             'content' => '',
-            'url' => '#'
+            'url' => 'https://www.solveigdc.fr/'
         ],
         'waral' => [
             'img' => 'chroniquesfr.jpg' ,
-            'imgAlt' => 'waral',
-            'title' => 'Chroniques de waral',
+            'imgAlt' => 'Hollux - site Chroniques de Waral',
+            'title' => 'Chroniques de Waral',
             'content' => '',
-            'url' => '#'
+            'url' => 'https://www.chroniquesdewaral.fr/'
         ],
         'haricot' => [
             'img' => 'haricotfr.jpg' ,
-            'imgAlt' => 'haricot',
-            'title' => 'Haricots de castelnaudari',
+            'imgAlt' => 'Hollux - site du Haricot de Castelnaudary',
+            'title' => 'Haricot de Castelnaudary',
             'content' => '',
-            'url' => '#'
+            'url' => 'http://haricotdecastelnaudary.fr/'
         ],
         'ludo' => [
             'img' => 'ludoWp.jpg' ,
-            'imgAlt' => 'ludo HW',
-            'title' => 'Ludothèque la caverne d\'ali baba',
+            'imgAlt' => 'Hollux - site de la Ludothèque d\'Horbourg-Wihr',
+            'title' => 'Ludothèque la caverne d\'Ali Baba',
             'content' => '',
-            'url' => '#'
+            'url' => 'https://www.ludotheque-horbourg-wihr.net/'
         ]
     ];
 
