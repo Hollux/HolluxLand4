@@ -11,7 +11,7 @@
 
         <div class="row">
             {% for externe in realisations.externes  %}
-                <a class='col-md-4 col-sm-6' href="{{ externe.url }}">
+                <a class='col-md-4 col-sm-6' href="{{ externe.url }}" target="_blank">
                     <img src="{{ asset('/img/realisations/' ~ externe.img) }}" alt="{{ externe.imgAlt }}">
                     <h3>{{ externe.title }}</h3>
                     <p>{{ externe.content }}</p>
@@ -21,10 +21,9 @@
         </div>
 
         <h2>Réalisations personnelles</h2>
-
         <div class="row">
             {% for interne in realisations.internes  %}
-                <a class='col-md-4 col-sm-6' href="{{ interne.url }}">
+                <a class='col-md-4 col-sm-6' href="{{ interne.url }}" target="_blank">
                     <img src="{{ asset('/img/realisations/' ~ interne.img) }}" alt="{{ interne.imgAlt }}">
                     <h3>{{ interne.title }}</h3>
                     <p>{{ interne.content }}</p>
