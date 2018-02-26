@@ -3,116 +3,35 @@
 {% block principal %}
     <div class="realisations container">
         <h1 class="text-center">Mes réalisations</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur deserunt dicta exercitationem
+        <p>Réalisations de sites internet et applications web elit. Aperiam consectetur deserunt dicta exercitationem
             fugit, hic labore modi molestias optio quisquam repellendus sed sunt temporibus vel veniam vitae voluptates.
             Neque, nesciunt.</p>
 
-        <h2>Réalisations externe</h2>
+        <h2>Réalisations externes</h2>
 
         <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/solveigdcfr.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Solveig DeCuyper : le site</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/chroniquesfr.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Chroniques de waral</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/haricotfr.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Haricots de castelnaudari</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/ludoWp.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Ludothèque la caverne d'ali baba</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
+            {% for externe in realisations.externes  %}
+                <a class='col-md-4 col-sm-6' href="{{ externe.url }}">
+                    <img src="{{ asset('/img/realisations/' ~ externe.img) }}" alt="{{ externe.imgAlt }}">
+                    <h3>{{ externe.title }}</h3>
+                    <p>{{ externe.content }}</p>
+                </a>
+            {% endfor %}
+
         </div>
 
+        <h2>Réalisations personnelles</h2>
 
-        <h2>Rélisations interne</h2>
+        <div class="row">
+            {% for interne in realisations.internes  %}
+                <a class='col-md-4 col-sm-6' href="{{ interne.url }}">
+                    <img src="{{ asset('/img/realisations/' ~ interne.img) }}" alt="{{ interne.imgAlt }}">
+                    <h3>{{ interne.title }}</h3>
+                    <p>{{ interne.content }}</p>
+                </a>
+            {% endfor %}
+        </div>
 
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/lala.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Random Smash up</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/lala.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Mini jeu cinéma</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/lala.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Conception List builder</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/lala.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Test ecommerce</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="#">
-                <div class="col-sm-3">
-                    <img src="{{ asset('/img/realisations/lala.jpg') }}" alt="réalisation">
-                </div>
-                <div class="col-sm-9">
-                    <h3>Module PDF</h3>
-                    <p>lala je raconte la realisation</p>
-                </div>
-            </a>
-        </div>
-    </div>
-
+</div>
 
 {% endblock %}
