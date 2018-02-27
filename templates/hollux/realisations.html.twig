@@ -1,14 +1,17 @@
 {% extends "hollux/Base/base.html.twig" %}
 
 {% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1 class="text-center">Mes réalisations</h1>
+            <p>Réalisations de sites internet et applications web elit. Aperiam consectetur deserunt dicta exercitationem
+                fugit, hic labore modi molestias optio quisquam repellendus sed sunt temporibus vel veniam vitae voluptates.
+                Neque, nesciunt.</p>
+        </div>
+    </div>
+
     <div class="realisations container">
-        <h1 class="text-center">Mes réalisations</h1>
-        <p>Réalisations de sites internet et applications web elit. Aperiam consectetur deserunt dicta exercitationem
-            fugit, hic labore modi molestias optio quisquam repellendus sed sunt temporibus vel veniam vitae voluptates.
-            Neque, nesciunt.</p>
-
         <h2>Réalisations externes</h2>
-
         <div class="row">
             {% for externe in realisations.externes  %}
                 <a class='col-md-4 col-sm-6' href="{{ externe.url }}">

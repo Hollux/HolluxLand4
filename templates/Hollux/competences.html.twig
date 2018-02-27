@@ -1,10 +1,15 @@
 {% extends "hollux/Base/base.html.twig" %}
 
 {% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1>Compétences</h1>
+            <p>petit texte sur les compétences : compétences principalement utilisées à mettre en avant, compétences en cours d'apprentissage</p>
+        </div>
+    </div>
     <div class="container">
+        <div class="competences text-center">
 
-    <div class="competences text-center">
-        <h1>Compétences</h1>
         <h2>Langages</h2>
         <div class="md-flex-center">
             <img src="{{ asset('img/competences/html5.png') }}" alt="Html5">
@@ -57,6 +62,7 @@
             <img src="{{ asset('img/competences/github.png') }}" alt="github">
 
         </div>
+    </div>
     </div>
 
 
