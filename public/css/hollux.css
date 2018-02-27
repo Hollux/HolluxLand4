@@ -351,7 +351,12 @@ body {
 ==================== */
 .bandeau {
   margin-top: -75px;
+    width:100%;
 }
+.hollux {
+    margin-top:20px;
+}
+.hollux img {}
 .home .imgSites .post {
   width: 100%;
   height: 200px;
