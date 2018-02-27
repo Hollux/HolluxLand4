@@ -1,15 +1,15 @@
 {% extends "hollux/Base/base.html.twig" %}
 
 {% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1>Me contacter</h1>
+            <p>Pour me contacter, n'hésitez pas à m'envoyer un email à l'adresse <a href="mailto:holluxpanda@gmail.com"><b>hollux@hotmail.fr</b></a>
+            Je vous répondrai au plus vite.<br>Vous pouvez également me laisser un message directement sur ce site !</p>
+        </div>
+    </div>
     <div class="container meContacter">
             <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
-            <h1>Me contacter</h1>
-
-            <p>Pour me contacter, n'hésitez pas à m'envoyer un email à l'adresse <a href="mailto:holluxpanda@gmail.com"><b>hollux@hotmail.fr</b></a>
-            </p>
-            <p>Je vous répondrai au plus vite.</p>
-            <br>
-            <p>Vous pouvez également me laisser un message directement sur ce site :</p>
 
             <!--   ERREUR-->
             <div style="background-color:red;"><?=$errors?></div>
