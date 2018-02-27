@@ -331,11 +331,11 @@ body {
         right: -100%;
         transition: all .6s ease-in-out .2s; }
   .post .post-content1 {
-    background-image: url("/img/realisations/ludoWp.jpg"); }
+    background-image: url("/img/fill/360/200/ludoWp.jpg"); }
   .post .post-content2 {
-    background-image: url("/img/realisations/haricotfr.jpg"); }
+    background-image: url("/img/fill/360/200/haricotfr.jpg"); }
   .post .post-content3 {
-    background-image: url("/img/realisations/solveigdcfr.jpg"); }
+    background-image: url("/img/fill/360/200/solveigdcfr.jpg"); }
 
 .post:hover .post-content {
   transform: scale(1.1); }
@@ -552,7 +552,7 @@ footer .footer p a:hover, footer .footer p a:focus, footer .footer p a:active {
   right: 5%;
   display: none;
   color: #C815D7;
-  background: url(../../../img/fleche_haut_blanc.png);
+  background: url(/img/fill/40/40/fleche_haut_blanc.png);
   background-size: 100%;
   border: 1px solid #3a3f51;
   font-size: 20px;

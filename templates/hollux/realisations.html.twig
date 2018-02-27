@@ -4,8 +4,10 @@
     <div class="blocHaut">
         <div class="container">
             <h1 class="text-center">Mes réalisations</h1>
-            <p>Réalisations de sites internet et applications web elit. Aperiam consectetur deserunt dicta exercitationem
-                fugit, hic labore modi molestias optio quisquam repellendus sed sunt temporibus vel veniam vitae voluptates.
+            <p>Réalisations de sites internet et applications web elit. Aperiam consectetur deserunt dicta
+                exercitationem
+                fugit, hic labore modi molestias optio quisquam repellendus sed sunt temporibus vel veniam vitae
+                voluptates.
                 Neque, nesciunt.</p>
         </div>
     </div>
@@ -13,10 +15,10 @@
     <div class="realisations container">
         <h2>Réalisations externes</h2>
         <div class="row">
-            {% for externe in realisations.externes  %}
+            {% for externe in realisations.externes %}
                 <a class='col-md-4 col-sm-6' href="{{ externe.url }}" target="_blank">
-                    <img src="{{ asset('/img/realisations/' ~ externe.img) }}" alt="{{ externe.imgAlt }}">
-                    <h3>{{ externe.title }}</h3>
+                    <img src="{{ asset( externe.img) }}" alt="{{ externe.imgAlt }}">
+                    <h3 class="text-center">{{ externe.title }}</h3>
                     <p>{{ externe.content }}</p>
                 </a>
             {% endfor %}
@@ -25,15 +27,15 @@
 
         <h2>Réalisations personnelles</h2>
         <div class="row">
-            {% for interne in realisations.internes  %}
+            {% for interne in realisations.internes %}
                 <a class='col-md-4 col-sm-6' href="{{ interne.url }}" target="_blank">
-                    <img src="{{ asset('/img/realisations/' ~ interne.img) }}" alt="{{ interne.imgAlt }}">
-                    <h3>{{ interne.title }}</h3>
+                    <img src="{{ asset( interne.img) }}" alt="{{ interne.imgAlt }}">
+                    <h3 class="text-center">{{ interne.title }}</h3>
                     <p>{{ interne.content }}</p>
                 </a>
             {% endfor %}
         </div>
 
-</div>
+    </div>
 
 {% endblock %}
