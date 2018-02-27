@@ -105,6 +105,7 @@ h3 {
   padding-top: 0px;
   font-size: 16px;
   font-weight: bold;
+  color:#e4cc8c;
 }
 .h4 {
     font-size: 18px;
@@ -422,7 +423,8 @@ body {
 .blocHaut {
   background: linear-gradient(to top left, #e4cc8c, #7e57c2);
   margin:-75px auto 40px;
-  padding:120px 0 70px;
+  padding:100px 0 70px;
+  height: 250px;
 }
 .blocHaut .container {
   background-color:transparent;
@@ -477,6 +479,15 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 /* ====================
 //	  INFOS PERSO    //
 ==================== */
+
+/* ====================
+//	 REALISATIONS    //
+==================== */
+.realisations a h3 {
+  text-align:center;
+  margin-bottom:30px;
+}
+
 /* ====================
 //	    FOOTER       //
 ==================== */
