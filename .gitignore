@@ -51,6 +51,7 @@ vendor
 parameters.yml
 parametersPROD.yml
 cache
+thumbs
 .log
 log
 logs

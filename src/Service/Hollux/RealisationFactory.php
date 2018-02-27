@@ -44,7 +44,7 @@ class RealisationFactory
             'imgAlt' => '',
             'title' => 'Random Smash up',
             'content' => '',
-            'url' => '#'
+            'url' => 'https://holluxtest.pw/smashUp'
         ],
         'minijeu' => [
             'img' => '' ,
