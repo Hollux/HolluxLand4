@@ -489,6 +489,13 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 }
 
 /* ====================
+//	 REALISATIONS    //
+==================== */
+.mentions h2 {
+  text-align:left;
+}
+
+/* ====================
 //	    FOOTER       //
 ==================== */
 footer {
