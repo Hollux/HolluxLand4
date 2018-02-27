@@ -95,15 +95,17 @@ h1 {
     color: #e4cc8c;
 }
 h2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align:center;
-    margin-bottom:30px;
-    text-transform:uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+  margin-bottom:30px;
+  text-transform:uppercase;
 }
 h3 {
-    padding-top: 0px;
-    font-size:20px;
+  padding-top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color:#e4cc8c;
 }
 .h4 {
     font-size: 18px;
@@ -226,44 +228,6 @@ body {
 }
 .container {
   background-color: white;
-}
-.container.infoPerso, .container.meContacter, .container.testImg, .container.testCache, .container.wuw {
-  min-height: calc(100vh - 50px);
-}
-
-.citation {
-  background-color: #e4cc8d;
-  /*padding: 30px 20px;*/
-  height:2px;
-  margin:20px auto;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 16px;
-}
-.citation .container {
-  background-color: #e4cc8d;
-  color:white;
-
-}
-.citation .container p {
-  width:80%;
-  margin:auto 10%;
-}
-div.allProjects {
-  background-color: #e4cc8c;
-  border-radius: 2px;
-  padding: 13px 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 30px auto;
-  width: 50%;
-  color:white;
-  text-align: center;
-  box-shadow: 0px 4px 3px rgba(51, 51, 51, 0.09);
-}
-div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
-  color:#ffffffcc;
 }
 
 .btn:hover {
@@ -429,6 +393,63 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 .home .imgSites .post:hover .post-title {
   transform: translatex(-100%); }
 
+.container.infoPerso, .container.meContacter, .container.testImg, .container.testCache, .container.wuw {
+  min-height: calc(100vh - 50px);
+}
+
+.citation {
+  background-color: #e4cc8d;
+  /*padding: 30px 20px;*/
+  height:2px;
+  margin:20px auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+}
+.citation .container {
+  background-color: #e4cc8d;
+  color:white;
+
+}
+.citation .container p {
+  width:80%;
+  margin:auto 10%;
+}
+
+/* ==============================
+//	  COMMUN PAGES INTERNES    //
+============================== */
+
+.blocHaut {
+  background: linear-gradient(to top left, #e4cc8c, #7e57c2);
+  margin:-75px auto 40px;
+  padding:100px 0 70px;
+  height: 250px;
+}
+.blocHaut .container {
+  background-color:transparent;
+}
+.blocHaut h1, .blocHaut p {
+  color:white;
+  text-align:left;
+}
+div.allProjects {
+  background-color: #e4cc8c;
+  border-radius: 2px;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px auto;
+  width: 50%;
+  color:white;
+  text-align: center;
+  box-shadow: 0px 4px 3px rgba(51, 51, 51, 0.09);
+}
+div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
+  color:#ffffffcc;
+}
+
 /* ====================
 //	 COMPETENCES     //
 ==================== */
@@ -443,9 +464,13 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 //	     CV          //
 ==================== */
 .CV {
-  background-color: #F4EBC3;
-  padding: 10px;
-  border-radius: 10px; }
+  background-color: #e2ca8c47;
+  padding: 20px;
+  /*border-radius: 10px;*/
+}
+.CV h3 {
+  color:#333;
+}
   .CV p {
     line-height: 13px; }
   .CV div {
@@ -457,6 +482,22 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 /* ====================
 //	  INFOS PERSO    //
 ==================== */
+
+/* ====================
+//	 REALISATIONS    //
+==================== */
+.realisations a h3 {
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* ========================
+//	 MENTIONS LEGALES    //
+======================== */
+.mentions h2 {
+  text-align:left;
+}
+
 /* ====================
 //	    FOOTER       //
 ==================== */
@@ -477,6 +518,11 @@ footer .container {
   background-color:#333333;
   min-height:50px;
 }
+footer .container a img.gitHub {
+  height:25px;
+  margin:-2px 10px auto;
+  float:unset;
+}
 footer .container a img {
   float: left;
   margin-left: -15px;
@@ -485,11 +531,12 @@ footer .container .footer {
   text-align:right;
   margin-top:16px;
 }
-footer .container .footer p a, footer .container .footer p {
+footer .footer p a, footer .footer p {
   color:#9d9d9d;
   text-decoration:none;
+  display:inline-block;
 }
-footer .container .footer p a:hover, footer .container .footer p a:focus, footer .container .footer p a:active {
+footer .footer p a:hover, footer .footer p a:focus, footer .footer p a:active {
   text-decoration:none;
   color:white;
 }

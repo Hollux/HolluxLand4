@@ -1,9 +1,14 @@
 {% extends "Hollux/Base/base.html.twig" %}
 
 {% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1>What u want</h1>
+            <p>Rapide formulaire(s) titre / content</p>
+        </div>
+    </div>
     <div class="container wuw">
-        <h1>What u want</h1>
-        <p>Rapide formulaire(s) titre / content</p>
+
 
         {{ form_start(form2) }}
         {{ form_widget(form2) }}
