@@ -117,6 +117,10 @@ a:hover, a:focus, a:active {
   color: #e4cc8c;
   text-decoration:none;
 }
+.btn {
+    background-color:#e4cc8c;
+    color:white;
+}
 .project hr {
   width:40%;
 }
@@ -350,6 +354,7 @@ body {
 //	     HOME        //
 ==================== */
 .bandeau {
+  min-width: 100%;
   margin-top: -75px;
     width:100%;
 }

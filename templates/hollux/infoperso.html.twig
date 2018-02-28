@@ -1,0 +1,98 @@
+{% extends "hollux/Base/base.html.twig" %}
+
+
+
+{% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1>En savoir plus sur Hollux</h1>
+            <p>Développeur web, alsacien à Lyon... What else ?</p>
+        </div>
+    </div>
+    <div class="container infoPerso">
+            <div class="infoPerso">
+
+                <button data-link="quiSuis" class="btn bSlideShow  dropdown-toggle">Qui suis-je ?</button>
+
+                <div data-link="quiSuis" class="slideShow dNone">
+
+                    <br>
+
+                    <p>Mon nom est Adrien Marchand mais je suis aussi appelé Hollux sur la toile.</p>
+
+                    <p>Je suis à la fois calme, presque flegmatique mais aussi énergique et efficace. Je déteste ne rien faire.</p>
+
+                    <p>Je suis avide de connaissance, toujours en quête de nouveaux défis pour être fier de mon travail une fois réalisé.</p>
+
+                    <p>J'écoute aussi beaucoup les avis et conseils de tous pour me faire ma propre opinion et évoluer dans
+                        les domaines qui me tiennent à coeur.</p>
+
+                    <br>
+
+                    <img src="{{ asset('img/moi.jpg') }}" alt="moi" width="100%">
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="infoPerso">
+
+                <button data-link="maVie" class="btn bSlideShow  dropdown-toggle">Ma vie</button>
+
+                <div data-link="maVie" class="slideShow dNone">
+
+                    <br>
+
+                    <p>Développeur de 26 ans, j'ai découvert le web très jeune, alors qu'il fallait presque une semaine pour
+                        télécharger un film. Depuis je ne l'ai plus quitté. J'ai également une appétence pour le hardware,
+                        et je monte moi-même mes ordinateurs depuis que j'ai 10 ans.</p>
+
+                    <br>
+
+                    <p>J'ai d'abord été Technicien en Electricité, mais ce métier n'était pas assez stimulant pour moi. J'ai donc changé de voie et ai suivi une formation de
+                        développeur / intégrateur web pour faire un métier qui me motive plus.</p>
+
+                    <p>Alsacien d'origine, je suis maintenant basé à Lyon. La région lyonnaise est en effet intéressante car elle bénéficie d'un environnement technologique et numérique très développé.</p>
+
+                    <br>
+
+                    <img src="{{ asset('img/colmar.jpg') }}" alt="colmar" width="100%">
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="infoPerso">
+
+                <button data-link="mesPassions" class="btn bSlideShow dropdown-toggle">Mes passions</button>
+
+                <div data-link="mesPassions" class="slideShow dNone">
+
+                    <br>
+
+                    <p>Je suis un passionné de jeux en tous genres : jeux de plateau, de figurines, de cartes ou de dés,
+                        jeux vidéos...</p>
+
+                    <p>Très clairement passionné de stratégie, cela a fortement développé ma réflexion, et fait que
+                        j'apprends très vite avec une logique assez brute.</p>
+
+                    <br>
+
+                    <p>Je m'intéresse également au modélisme, au cinéma, aux séries. Je joue de la guitare, et fais du
+                        tennis, du ping-pong et même du jonglage (parfois même avec du feu !).</p>
+
+                    <br>
+
+                    <img src="{{ asset('img/passions.jpg') }}" alt="passions" width="100%">
+
+                </div>
+
+            </div>
+    </div>
+{% endblock %}
+
+

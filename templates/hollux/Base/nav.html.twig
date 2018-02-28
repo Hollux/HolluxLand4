@@ -1,0 +1,48 @@
+{% set page =  app.request.attributes.get('_route') %}
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="divLogo">
+                <a class="navbar-brand" href="{{ path('home') }}">
+                    <img class="logo" src="{{ asset('img/base/logoHollux3blanc.png') }}" alt="logo">
+                    <!--<img class="logo" src="{{ asset('img/fill/144/45/logoHollux3blanc.png') }}" alt="logo">-->
+                </a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="{{ (page == 'home') ? 'active' }}">
+                    <a href="{{ path('home') }}">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="dropdown {{ (page == 'competences') or (page == 'cv') ? 'active' }}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Hollux<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-link="cv" href="{{ path('cv') }}">CV</a></li>
+                        <li><a data-link="competences" href="{{ path('competences') }}">Compétences</a></li>
+                        <li><a data-link="infoperso" class="bouton" href="{{ path('infoperso') }}">En savoir plus</a></li>
+                    </ul>
+                </li>
+                <li class="{{ (page == 'realisations') ? 'active' }}"><a href="{{ path('realisations') }}">Réalisations</a></li>
+                {#<li class=""><a href="#">Bundles</a></li>#}
+                <li class="{% if page == 'mecontacter' %}active{% endif %}">
+                    <a href="{{ path('mecontacter') }}">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
