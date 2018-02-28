@@ -1,0 +1,69 @@
+{% extends "hollux/Base/base.html.twig" %}
+
+{% block principal %}
+    <div class="blocHaut">
+        <div class="container">
+            <h1>Compétences</h1>
+            <p>petit texte sur les compétences : compétences principalement utilisées à mettre en avant, compétences en cours d'apprentissage</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="competences text-center">
+
+        <h2>Langages</h2>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/html5.png') }}" alt="Html5">
+            <img src="{{ asset('img/fill/100/100/css3.png') }}" alt="CSS3">
+            <img src="{{ asset('img/fill/200/100/php.png') }}" alt="PHP">
+            <img src="{{ asset('img/fill/100/100/js.png') }}" alt="JS">
+            <img src="{{ asset('img/fill/200/100/less.png') }}" alt="Less">
+            <img src="{{ asset('img/fill/200/100/sass.jpg') }}" alt="Sass">
+        </div>
+        <br>
+        <div class="border"></div>
+        <h2>Frameworks</h2>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/bootstrap.jpg') }}" alt="Bootstrap">
+            <img src="{{ asset('img/fill/100/100/jquery.png') }}" alt="Jquery">
+            <img src="{{ asset('img/fill/100/100/symfony.png') }}" alt="Symfony">
+        </div>
+        <br>
+        <div class="border"></div>
+        <h2>Base de données</h2>
+        <div class="md-flex-center">
+            <img class="mysql" src="{{ asset('img/fill/200/100/mySQL.png') }}" alt="mysql">
+        </div>
+        <br>
+        <div class="border"></div>
+        <h2>CMS</h2>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/wp.png') }}" alt="Wordpress">
+        </div>
+        <br>
+        <div class="border"></div>
+        <h2>Systèmes d'exploitation</h2>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/windows.png') }}" alt="windows">
+            <img src="{{ asset('img/fill/100/100/linux.png') }}" alt="linux">
+        </div>
+        <br>
+        <div class="border"></div>
+        <h2>Autres</h2>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/xampp.png') }}" alt="xampp">
+            <img src="{{ asset('img/fill/100/100/wamp.png') }}" alt="wamp">
+            <img src="{{ asset('img/fill/100/100/easyphp.png') }}" alt="easyphp">
+            <img src="{{ asset('img/fill/200/100/apache.jpg') }}" alt="apache">
+            <img src="{{ asset('img/fill/100/100/filezilla.png') }}" alt="filezilla">
+        </div>
+        <br>
+        <div class="md-flex-center">
+            <img src="{{ asset('img/fill/100/100/ovh.png') }}" alt="ovh">
+            <img src="{{ asset('img/fill/100/100/github.png') }}" alt="github">
+
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}
