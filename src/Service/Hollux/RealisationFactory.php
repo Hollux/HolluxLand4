@@ -12,7 +12,7 @@ class RealisationFactory
             'img' => 'img/fill/360/184/solveigdcfr.jpg',
             'imgAlt' => 'Hollux - site Solveig De Cuyper',
             'title' => 'Solveig De Cuyper',
-            'content' => 'Site vitrine pour Développeuse, réalisé en symfony3 avec mise en place de certains outils 
+            'content' => 'Site vitrine pour Webdesigneur, réalisé en symfony3 avec mise en place de certains outils 
                 déjà présent sur mon site. Plusieurs test avec l\'outil masonry mais non retenu car fait pour trop de contenu',
             'url' => 'https://www.solveigdc.fr/'
         ],
