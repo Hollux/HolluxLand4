@@ -12,31 +12,30 @@ class RealisationFactory
             'img' => 'img/fill/360/184/solveigdcfr.jpg',
             'imgAlt' => 'Hollux - site Solveig De Cuyper',
             'title' => 'Solveig De Cuyper',
-            'content' => 'Site vitrine pour Webdesigneur, réalisé en symfony3 avec mise en place de certains outils 
-                déjà présent sur mon site. Plusieurs test avec l\'outil masonry mais non retenu car fait pour trop de contenu',
+            'content' => 'Site vitrine pour Solveig De Cuyper, webdesigner à Lyon. Réalisé en Symfony3 avec mise en place de certains outils 
+                déjà présent sur mon site. Plusieurs test avec l\'outil masonry mais non retenus car il est fait pour trop de contenu par rapport à ce site.',
             'url' => 'https://www.solveigdc.fr/'
         ],
         'waral' => [
             'img' => 'img/fill/360/184/chroniquesfr.jpg',
             'imgAlt' => 'Hollux - site Chroniques de Waral',
             'title' => 'Chroniques de Waral',
-            'content' => 'Commande en cour de réalisation, site vitrine administrable par le client dans un premier 
-                temps réalisation en symfony3, par la suite site Ecommerce en attente de contenu de la part du client',
+            'content' => 'Site vitrine en cours de réalisation. Dans un premier 
+                temps réalisation en Symfony3, puis deviendra administrable par le client. Par la suite, il est prévu que ce site évolue en Ecommerce. En attente de contenus de la part du client.',
             'url' => 'https://www.chroniquesdewaral.fr/'
         ],
         'haricot' => [
             'img' => 'img/fill/360/184/haricotfr.jpg',
             'imgAlt' => 'Hollux - site du Haricot de Castelnaudary',
             'title' => 'Haricot de Castelnaudary',
-            'content' => 'Site vitrine pour une entreprise de vente de haricot de Castelnaudary, réalisation from scratch en MVC',
+            'content' => 'Site vitrine pour Le haricot de Castelnaudary, label visant à promouvoir le haricot lingot du Languedoc. Réalisation from scratch en MVC.',
             'url' => 'http://haricotdecastelnaudary.fr/'
         ],
         'ludo' => [
             'img' => 'img/fill/360/184/ludoWp.jpg',
             'imgAlt' => 'Hollux - site de la Ludothèque d\'Horbourg-Wihr',
             'title' => 'Ludothèque la caverne d\'Ali Baba',
-            'content' => 'Réalisation bénévole d\'un petit site wordpress pour une ludothèque car leur site datait 
-            un peu. Réalisation et demande simple voilà pourquoi j\'ai testé wordpress',
+            'content' => 'Réalisation bénévole d\'un petit site Wordpress pour la ludothèque "La Caverne d\'Ali Baba" (création d\'un thème). Réalisation et demande simples, voilà pourquoi j\'ai testé Wordpress !',
             'url' => 'https://www.ludotheque-horbourg-wihr.net/'
         ]
     ];
@@ -46,7 +45,7 @@ class RealisationFactory
             'img' => 'img/fill/360/184/smashUp.png',
             'imgAlt' => 'smashup',
             'title' => 'Random Smash up',
-            'content' => 'Petite création pour mon utilisation du jeu SmashUp afin de rajouter du fun entre amis.',
+            'content' => 'Petite création pour mon utilisation du jeu SmashUp afin de rajouter du fun entre amis. Outil de choix de factions aléatoires.',
             'url' => 'https://holluxtest.pw/smashUp'
         ],
         /*'minijeu' => [
@@ -60,28 +59,28 @@ class RealisationFactory
             'img' => 'img/fill/360/184/listBuilder.png',
             'imgAlt' => '',
             'title' => 'Conception List builder',
-            'content' => 'Demande d\'un outil de list builder pour un jeu de figurine, j\'ai donc fais ce test sur la base du jeu Wahrammer pour voir si cela m\'était possible',
+            'content' => 'Demande d\'un outil de list builder pour un jeu de figurine, j\'ai donc fait ce test sur la base du jeu Warhammer pour voir si cela m\'était possible',
             'url' => 'https://holluxtest.pw/listbuilde/'
         ],
         'ecom' => [
             'img' => 'img/fill/360/184/testEcom.png',
             'imgAlt' => '',
             'title' => 'Test ecommerce',
-            'content' => 'Essai de Ecommerce Symfony en suivant deux trois tutos, souvent détruit et refais (donc état actuel pas top)',
+            'content' => 'Essai de Ecommerce Symfony en suivant quelques tutos. Souvent détruit et refait (d\'où l\'état actuel pas top)',
             'url' => 'https://holluxtest.pw/ecomindex'
         ],
         'pdf' => [
             'img' => 'img/fill/360/184/pdfEx.png',
             'imgAlt' => '',
             'title' => 'Module PDF',
-            'content' => 'Petit outil de pdf toujours utile sur un site web.',
+            'content' => 'Petit outil de PDF toujours utile sur un site web.',
             'url' => 'https://holluxtest.pw/viewpdf/solveig-de-cuyper_cv_da-junior'
         ],
         'tutos' => [
             'img' => 'img/fill/360/184/tutos.png',
             'imgAlt' => '',
             'title' => 'Tutos Fun',
-            'content' => 'Réalisation fun de tutos code pour me perfectionné, très inspiré de la Désencyclopédie',
+            'content' => 'Réalisation fun de tutos code pour me perfectionner. Très inspiré par la Désencyclopédie.',
             'url' => 'https://holluxtest.pw/tutos/'
         ]
     ];
