@@ -46,18 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+.env
 perso
 vendor
-parameters.yml
-parametersPROD.yml
-cache
-thumbs
-.log
-log
-logs
-sfn.sql
-app_dev.php
-LoadAUser.php
 .idea
 ###> symfony/web-server-bundle ###
 .web-server-pid
