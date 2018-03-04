@@ -12,13 +12,13 @@
         <h2>Réalisations externes</h2>
         <div class="row">
             {% for externe in realisations.externes %}
-
-                <a class='col-md-4 col-sm-6' href="{{ externe.url }}" target="_blank">
+            <div class="col-md-4 col-sm-6">
+                <a  href="{{ externe.url }}" target="_blank">
                     <img src="{{ asset( externe.img) }}" alt="{{ externe.imgAlt }}">
                     <h3 class="text-center">{{ externe.title }}</h3>
-                    <p>{{ externe.content }}</p>
                 </a>
-
+                <p>{{ externe.content }}</p>
+                </div>
                 {% if loop.index is divisible by(3) and not loop.last %}
         </div>
         <div class="row">
@@ -32,11 +32,13 @@
         <h2>Réalisations personnelles</h2>
         <div class="row">
             {% for interne in realisations.internes %}
-                <a class='col-md-4 col-sm-6' href="{{ interne.url }}" target="_blank">
-                    <img src="{{ asset( interne.img) }}" alt="{{ interne.imgAlt }}">
-                    <h3 class="text-center">{{ interne.title }}</h3>
+                <div class="col-md-4 col-sm-6">
+                    <a href="{{ interne.url }}" target="_blank">
+                        <img src="{{ asset( interne.img) }}" alt="{{ interne.imgAlt }}">
+                        <h3 class="text-center">{{ interne.title }}</h3>
+                    </a>
                     <p>{{ interne.content }}</p>
-                </a>
+                </div>
 
             {% if loop.index is divisible by(3) and not loop.last %}
         </div>

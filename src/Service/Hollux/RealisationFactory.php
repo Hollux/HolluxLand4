@@ -13,15 +13,14 @@ class RealisationFactory
             'imgAlt' => 'Hollux - site Solveig De Cuyper',
             'title' => 'Solveig De Cuyper',
             'content' => 'Site vitrine pour Solveig De Cuyper, webdesigner à Lyon. Réalisé en Symfony3 avec mise en place de certains outils 
-                déjà présent sur mon site. Plusieurs test avec l\'outil masonry mais non retenus car il est fait pour trop de contenu par rapport à ce site.',
+                déjà présent sur mon site. Plusieurs test avec l\'outil masonry, finalement non retenu.',
             'url' => 'https://www.solveigdc.fr/'
         ],
         'waral' => [
             'img' => 'img/fill/360/184/chroniquesfr.jpg',
             'imgAlt' => 'Hollux - site Chroniques de Waral',
             'title' => 'Chroniques de Waral',
-            'content' => 'Site vitrine en cours de réalisation. Dans un premier 
-                temps réalisation en Symfony3, puis deviendra administrable par le client. Par la suite, il est prévu que ce site évolue en Ecommerce. En attente de contenus de la part du client.',
+            'content' => 'Site vitrine en cours de réalisation. Réalisation en Symfony3. Par la suite, il est prévu que ce site évolue en Ecommerce administrable. En attente de contenus de la part du client.',
             'url' => 'https://www.chroniquesdewaral.fr/'
         ],
         'haricot' => [
