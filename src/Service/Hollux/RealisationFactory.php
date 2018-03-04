@@ -74,7 +74,7 @@ class RealisationFactory
             'imgAlt' => '',
             'title' => 'Module PDF',
             'content' => 'Petit outil de PDF toujours utile sur un site web.',
-            'url' => 'https://holluxtest.pw/viewpdf/solveig-de-cuyper_cv_da-junior'
+            'url' => 'https://holluxtest.pw/viewpdf/adrien_marchand_cv'
         ],
         'tutos' => [
             'img' => 'img/fill/360/184/tutos.png',
