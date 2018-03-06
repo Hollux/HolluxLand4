@@ -13,17 +13,19 @@
                     <img src="{{ asset('img/crop/146/180/tete2.png') }}" alt="photo Hollux">
                 </div>
                 <div class="col-xs-8 col-sm-10">
-                    <h1>Hollux, développeur full stack</h1>
+                    <h1>Hollux, développeur fullstack</h1>
                     <div class="home">
-                        <p>Je suis <b>Hollux</b>, aka Adrien Marchand. Je suis un jeune <b>développeur web</b> à la
-                            recherche d'opportunités en région lyonnaise. Je peux développer votre site administrable,
+                        <p>Je suis <b>Hollux</b>, aka Adrien Marchand, jeune <b>développeur web</b> à la
+                            recherche d'opportunités en région lyonnaise. Actuellement en post de développeur symfony.
+                            Je peux développer votre site administrable,
                             vitrine ou e-commerce, complètement sur-mesure ou basé sur
                             un CMS, à partir de technologies que vous pouvez voir <a href="competences">ici</a>.</p>
                         {#<div class="scroll"></div>#}
                         <p>Et vous ? Vous cherchez un <b>développeur fullstack</b> ?<br/>
                             Vous avez trouvé ! Il ne vous reste plus qu'à <a href="meContacter">me contacter</a>.
                         </p>
-                        <p><i>PS : Ce site est mon site sandbox où je développe des tests.</i></p>
+
+                        {{ app.environment != 'prod' ? "<p><i>PS : Ce site est un de mes sites sandbox où je développe des tests.</i></p>" }}
                     </div>
                 </div>
             </div>

@@ -11,88 +11,213 @@
         </div>
     </div>
     <div class="container infoPerso">
-            <div class="infoPerso">
 
-                <button data-link="quiSuis" class="btn bSlideShow  dropdown-toggle">Qui suis-je ?</button>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            {#Partie 1#}
+            <div class="panel panel-default">
+                <div class="panel-heading btnCollapse" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#quiSuisJe"
+                           aria-expanded="true" aria-controls="quiSuisJe">
+                            Qui suis-je ?
+                        </a>
+                    </h4>
+                </div>
+                <div id="quiSuisJe" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <p>Mon nom est Adrien Marchand mais je suis aussi appelé Hollux sur la toile.</p>
+                        <p>Je suis à la fois calme, presque flegmatique mais aussi énergique et efficace. Je déteste ne
+                            rien
+                            faire.</p>
+                        <p>Je suis avide de connaissances, toujours en quête de nouveaux défis pour m'occuper et
+                            progresser.</p>
+                        <p>J'écoute aussi beaucoup les avis et conseils de tous pour me faire ma propre opinion et
+                            évoluer dans
+                            les divers domaines qui m'interessent.</p>
+                        {#<br>
+                        <img src="{{ asset('img/moi.jpg') }}" alt="moi" width="100%">#}
+                    </div>
+                </div>
+            </div>
+            {#Partie 2#}
+            <div class="panel panel-default">
+                <div class="panel-heading btnCollapse" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#maVie"
+                           aria-expanded="false" aria-controls="maVie">
+                            Ma vie
+                        </a>
+                    </h4>
+                </div>
+                <div id="maVie" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <p>Développeur de 26 ans, j'ai découvert le web très jeune, alors qu'il fallait presque une
+                            semaine pour
+                            télécharger (légalement!) un film. Depuis je ne l'ai plus quitté. J'ai également une
+                            appétence pour
+                            le hardware,
+                            et je monte moi-même mes ordinateurs depuis que j'ai 10 ans.</p>
+                        <br>
+                        <p>J'ai d'abord été Technicien en Electricité, mais ce métier n'était pas assez stimulant pour
+                            moi. J'ai
+                            donc changé de voie et ai suivi une formation de
+                            développeur / intégrateur web pour faire un travail qui me motive plus.</p>
+                        <p>Alsacien d'origine, je suis maintenant basé à Lyon. La région lyonnaise est en effet
+                            intéressante car
+                            elle bénéficie d'un environnement technologique et numérique très développé.</p>
+                        {#<br>
+                        <img src="{{ asset('img/colmar.jpg') }}" alt="colmar" width="100%">#}
+                    </div>
+                </div>
+            </div>
+            {#Partie 3#}
+            <div class="panel panel-default">
+                <div class="panel-heading btnCollapse" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#mesPassions" aria-expanded="false" aria-controls="mesPassions">
+                            Mes passions
+                        </a>
+                    </h4>
+                </div>
+                <div id="mesPassions" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <p>Je suis un passionné de jeux en tous genres : jeux de plateau, de figurines, de cartes ou de
+                            dés,
+                            jeux vidéos...</p>
+                        <p>Très clairement attiré par la stratégie, cela a fortement développé ma réflexion, et fait que
+                            j'apprends très vite avec une logique assez brute.</p>
+                        <p>Je m'intéresse également au modélisme, au cinéma, aux séries. Je joue de la guitare, et fais
+                            du
+                            tennis, du ping-pong et même du jonglage (parfois avec du feu).</p>
+                        {#<br>
+                        <img src="{{ asset('img/passions.jpg') }}" alt="passions" width="100%">#}
+                    </div>
+                </div>
+            </div>
+            {#Partie 4#}
+            <div class="panel panel-default">
+                <div class="panel-heading btnCollapse" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#recrutement" aria-expanded="false" aria-controls="recrutement">
+                            Recrutement
+                        </a>
+                    </h4>
+                </div>
+                <div id="recrutement" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <p>Comme indiqué sur ma page CV, je suis à la recherche d'une nouvelle opportuinté à Lyon ou en
+                            région lyonnaise</p>
+                        <p>Il me faut changer d'air afin de m'améliorer sur des sujets qui me passionnent : travailler
+                            sur un framework PHP récent car c'est ce que je fais de mieux, et également progresser avec
+                            un framework JS comme vue.JS ou reactJS qui me semblent avoir un potentiel intéressant.</p>
+                        <p>Je voudrais aussi faire des webservices, des API, du code propre, testé et stable.
+                            Et qui sait, peut-être même pouvoir me tourner vers des applications mobiles ou des
+                            progressive web app !</p>
+                        <p>L'idéal pour moi serait d'être dans une entreprise avec un environnement de travail moderne :
+                            possibilité de télétravail, utilisation de git, intégration continue, travail d'équipe, une
+                            bonne machine adaptée au développement avec les programmes nécessaires.</p>
+                    </div>
+                </div>
+            </div>
 
-                <div data-link="quiSuis" class="slideShow dNone">
+            <H2>test</H2>
 
-                    <br>
-
-                    <p>Mon nom est Adrien Marchand mais je suis aussi appelé Hollux sur la toile.</p>
-
-                    <p>Je suis à la fois calme, presque flegmatique mais aussi énergique et efficace. Je déteste ne rien faire.</p>
-
-                    <p>Je suis avide de connaissance, toujours en quête de nouveaux défis pour être fier de mon travail une fois réalisé.</p>
-
-                    <p>J'écoute aussi beaucoup les avis et conseils de tous pour me faire ma propre opinion et évoluer dans
-                        les domaines qui me tiennent à coeur.</p>
-
-                    <br>
-
-                    <img src="{{ asset('img/moi.jpg') }}" alt="moi" width="100%">
-
+            <div class="fadeTest">
+                <div class="fadeToggle" data-fade="fade1">
+                    <div class="fadeTitle">Qui suis-je?</div>
+                    <div class="fadeT" data-fadetarget="fade1">
+                        <p>Mon nom est Adrien Marchand mais je suis aussi appelé Hollux sur la toile.</p>
+                        <p>Je suis à la fois calme, presque flegmatique mais aussi énergique et efficace. Je déteste ne
+                            rien
+                            faire.</p>
+                        <p>Je suis avide de connaissances, toujours en quête de nouveaux défis pour m'occuper et
+                            progresser.</p>
+                        <p>J'écoute aussi beaucoup les avis et conseils de tous pour me faire ma propre opinion et
+                            évoluer dans
+                            les divers domaines qui m'interessent.</p>
+                        {#<br>
+                        <img src="{{ asset('img/moi.jpg') }}" alt="moi" width="100%">#}
+                    </div>
+                </div>
+                <div class="fadeToggle" data-fade="fade2">
+                    <div class="fadeTitle">Ma vie</div>
+                    <div class="fadeT" data-fadetarget="fade2">
+                        <p>Développeur de 26 ans, j'ai découvert le web très jeune, alors qu'il fallait presque une
+                            semaine pour
+                            télécharger (légalement!) un film. Depuis je ne l'ai plus quitté. J'ai également une
+                            appétence pour
+                            le hardware,
+                            et je monte moi-même mes ordinateurs depuis que j'ai 10 ans.</p>
+                        <br>
+                        <p>J'ai d'abord été Technicien en Electricité, mais ce métier n'était pas assez stimulant pour
+                            moi. J'ai
+                            donc changé de voie et ai suivi une formation de
+                            développeur / intégrateur web pour faire un travail qui me motive plus.</p>
+                        <p>Alsacien d'origine, je suis maintenant basé à Lyon. La région lyonnaise est en effet
+                            intéressante car
+                            elle bénéficie d'un environnement technologique et numérique très développé.</p>
+                        {#<br>
+                        <img src="{{ asset('img/colmar.jpg') }}" alt="colmar" width="100%">#}
+                    </div>
+                </div>
+                <div class="fadeToggle" data-fade="fade3">
+                    <div class="fadeTitle">Mes passions</div>
+                    <div class="fadeT" data-fadetarget="fade3">
+                        <p>Je suis un passionné de jeux en tous genres : jeux de plateau, de figurines, de cartes ou de
+                            dés,
+                            jeux vidéos...</p>
+                        <p>Très clairement attiré par la stratégie, cela a fortement développé ma réflexion, et fait que
+                            j'apprends très vite avec une logique assez brute.</p>
+                        <p>Je m'intéresse également au modélisme, au cinéma, aux séries. Je joue de la guitare, et fais
+                            du
+                            tennis, du ping-pong et même du jonglage (parfois avec du feu).</p>
+                        {#<br>
+                        <img src="{{ asset('img/passions.jpg') }}" alt="passions" width="100%">#}
+                    </div>
+                </div>
+                <div class="fadeToggle" data-fade="fade4">
+                    <div class="fadeTitle">Recrutement</div>
+                    <div class="fadeT" data-fadetarget="fade4">
+                        <p>Comme indiqué sur ma page CV, je suis à la recherche d'une nouvelle opportuinté à Lyon ou en
+                            région lyonnaise</p>
+                        <p>Il me faut changer d'air afin de m'améliorer sur des sujets qui me passionnent : travailler
+                            sur un framework PHP récent car c'est ce que je fais de mieux, et également progresser avec
+                            un framework JS comme vue.JS ou reactJS qui me semblent avoir un potentiel intéressant.</p>
+                        <p>Je voudrais aussi faire des webservices, des API, du code propre, testé et stable.
+                            Et qui sait, peut-être même pouvoir me tourner vers des applications mobiles ou des
+                            progressive web app !</p>
+                        <p>L'idéal pour moi serait d'être dans une entreprise avec un environnement de travail moderne :
+                            possibilité de télétravail, utilisation de git, intégration continue, travail d'équipe, une
+                            bonne machine adaptée au développement avec les programmes nécessaires.</p>
+                    </div>
                 </div>
 
             </div>
 
-            <br>
 
-            <div class="infoPerso">
+            <style>
+                .fadeToggle {
+                    background-color: #f5f5f5;
+                    padding: 10px 15px;
+                    display: block;
+                    color: black;
+                    border-color: #ddd;
+                    border: 1px solid transparent;
+                    border-radius: 4px
+                }
 
-                <button data-link="maVie" class="btn bSlideShow  dropdown-toggle">Ma vie</button>
+                .fadeToggle + .fadeToggle {
+                    margin-top: 5px
+                }
 
-                <div data-link="maVie" class="slideShow dNone">
+                .fadeT {
+                    display: none;
+                }
+            </style>
 
-                    <br>
-
-                    <p>Développeur de 26 ans, j'ai découvert le web très jeune, alors qu'il fallait presque une semaine pour
-                        télécharger un film. Depuis je ne l'ai plus quitté. J'ai également une appétence pour le hardware,
-                        et je monte moi-même mes ordinateurs depuis que j'ai 10 ans.</p>
-
-                    <br>
-
-                    <p>J'ai d'abord été Technicien en Electricité, mais ce métier n'était pas assez stimulant pour moi. J'ai donc changé de voie et ai suivi une formation de
-                        développeur / intégrateur web pour faire un métier qui me motive plus.</p>
-
-                    <p>Alsacien d'origine, je suis maintenant basé à Lyon. La région lyonnaise est en effet intéressante car elle bénéficie d'un environnement technologique et numérique très développé.</p>
-
-                    <br>
-
-                    <img src="{{ asset('img/colmar.jpg') }}" alt="colmar" width="100%">
-
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="infoPerso">
-
-                <button data-link="mesPassions" class="btn bSlideShow dropdown-toggle">Mes passions</button>
-
-                <div data-link="mesPassions" class="slideShow dNone">
-
-                    <br>
-
-                    <p>Je suis un passionné de jeux en tous genres : jeux de plateau, de figurines, de cartes ou de dés,
-                        jeux vidéos...</p>
-
-                    <p>Très clairement passionné de stratégie, cela a fortement développé ma réflexion, et fait que
-                        j'apprends très vite avec une logique assez brute.</p>
-
-                    <br>
-
-                    <p>Je m'intéresse également au modélisme, au cinéma, aux séries. Je joue de la guitare, et fais du
-                        tennis, du ping-pong et même du jonglage (parfois même avec du feu !).</p>
-
-                    <br>
-
-                    <img src="{{ asset('img/passions.jpg') }}" alt="passions" width="100%">
-
-                </div>
-
-            </div>
+        </div>
     </div>
 {% endblock %}
 

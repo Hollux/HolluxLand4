@@ -492,7 +492,10 @@ div.allProjects:hover, div.allProjects:focus, div.allProjects:active{
 /* ====================
 //	  INFOS PERSO    //
 ==================== */
-
+.btnCollapse {
+  background-color:#e4cc8c;
+  color:white;
+}
 /* ====================
 //	 REALISATIONS    //
 ==================== */

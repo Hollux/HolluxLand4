@@ -3,20 +3,22 @@
 $('.content').slideDown(2000, function () {
 });
 
-$('.bSlideShow').click(function () {
-    var current = $(this).attr('data-link');
-    $('div[data-link=' + current + ']').addClass('active');
-    if ($('div[data-link=' + current + ']').is(":visible")) {
 
-        $('div[data-link=' + current + ']').slideUp('slow', function () {
-        });
-        $('div[data-link=' + current + ']').removeClass('active');
-    }
-    else {
-        $('div[data-link=' + current + ']').slideDown('slow', function () {
-        });
-    }
+$(document).ready(function(){
+    $(".fadeToggle").click(function(){
+        var fade = $(this).attr('data-fade');
+        $("div[data-fadetarget]").each(function(){
+           if($(this)[0] != $("div[data-fadetarget="+ fade +"]")[0]) {
+                $(this).fadeOut();
+            }
+        })
+        $("div[data-fadetarget="+ fade +"]").fadeToggle();
+    });
+
+    //ouverture p1
+    $("div[data-fadetarget=fade1]").fadeIn();
 });
+
 
 /*RETOUR HAUT DE PAGE*/
 
