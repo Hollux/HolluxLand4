@@ -45,7 +45,7 @@ class RealisationFactory
             'imgAlt' => 'smashup',
             'title' => 'Random Smash up',
             'content' => 'Petite création pour mon utilisation du jeu SmashUp afin de rajouter du fun entre amis. Outil de choix de factions aléatoires.',
-            'url' => 'https://holluxtest.pw/smashUp'
+            'url' => 'https://old.hollux.pw/smashUp'
         ],
         /*'minijeu' => [
             'img' => '' ,
@@ -59,28 +59,28 @@ class RealisationFactory
             'imgAlt' => '',
             'title' => 'Conception List builder',
             'content' => 'Demande d\'un outil de list builder pour un jeu de figurine, j\'ai donc fait ce test sur la base du jeu Warhammer pour voir si cela m\'était possible',
-            'url' => 'https://holluxtest.pw/listbuilde/'
+            'url' => 'https://old.hollux.pw/listbuilde/'
         ],
         'ecom' => [
             'img' => 'img/fill/360/184/testEcom.png',
             'imgAlt' => '',
             'title' => 'Test ecommerce',
             'content' => 'Essai de Ecommerce Symfony en suivant quelques tutos. Souvent détruit et refait (d\'où l\'état actuel pas top)',
-            'url' => 'https://holluxtest.pw/ecomindex'
+            'url' => 'https://old.hollux.pw/ecomindex'
         ],
         'pdf' => [
             'img' => 'img/fill/360/184/pdfEx.png',
             'imgAlt' => '',
             'title' => 'Module PDF',
             'content' => 'Petit outil de PDF toujours utile sur un site web.',
-            'url' => 'https://holluxtest.pw/viewpdf/adrien_marchand_cv'
+            'url' => 'https://old.hollux.pw/viewpdf/adrien_marchand_cv'
         ],
         'tutos' => [
             'img' => 'img/fill/360/184/tutos.png',
             'imgAlt' => '',
             'title' => 'Tutos Fun',
             'content' => 'Réalisation fun de tutos code pour me perfectionner. Très inspiré par la Désencyclopédie.',
-            'url' => 'https://holluxtest.pw/tutos/'
+            'url' => 'https://old.hollux.pw/tutos/'
         ]
     ];
 
