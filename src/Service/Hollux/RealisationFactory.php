@@ -40,6 +40,13 @@ class RealisationFactory
     ];
 
     const internes = [
+        'VueJS' => [
+            'img' => 'img/fill/360/184/vueJS.png',
+            'imgAlt' => 'vueJS',
+            'title' => 'VueJS',
+            'content' => "tests de VueJS, réalisation d'un mini jeu présent sur l'application",
+            'url' => 'https://hollux.fr/#/jeux'
+        ],
         'smashup' => [
             'img' => 'img/fill/360/184/smashUp.png',
             'imgAlt' => 'smashup',
