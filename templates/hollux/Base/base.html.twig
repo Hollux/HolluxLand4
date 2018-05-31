@@ -37,24 +37,26 @@
 </head>
 
 <body>
-<a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
+    <div id="xztp">
+        <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
 
-    {{ include('hollux/Base/nav.html.twig') }}
+        {{ include('hollux/Base/nav.html.twig') }}
 
-    {% for flash_message in app.session.flashBag.get('error') %}
-        <div class="flash-notice flash-bg-red">
-            <p>{{ flash_message }}</p>
-        </div>
-    {% endfor %}
-    {% for flash_message in app.session.flashBag.get('success') %}
-        <div class="flash-notice flash-bg-24bd24">
-            <p>{{ flash_message }}</p>
-        </div>
-    {% endfor %}
+        {% for flash_message in app.session.flashBag.get('error') %}
+            <div class="flash-notice flash-bg-red">
+                <p>{{ flash_message }}</p>
+            </div>
+        {% endfor %}
+        {% for flash_message in app.session.flashBag.get('success') %}
+            <div class="flash-notice flash-bg-24bd24">
+                <p>{{ flash_message }}</p>
+            </div>
+        {% endfor %}
 
 
-    {% block principal %}{% endblock %}
-    <br>
+        {% block principal %}{% endblock %}
+        <br>
+    </div>
 
 {{ include('hollux/Base/footer.html.twig') }}
 
