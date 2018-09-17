@@ -25,6 +25,15 @@ class HolluxController extends AbstractController
     }
 
     /**
+     * @Route("/gmartin", name="gmartin")
+     */
+    public function gmartin()
+    {
+
+        return [];
+    }
+
+    /**
      * @Route("/cv", name="cv")
      */
     public function cv()

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block titleBase %}{% endblock %}HoLLuX</title>
+
+    <meta charset="UTF-8">
+
+    {% block head %}{% endblock %}
+
+    <!--    Meta description -->
+    <meta name="description" value="{% block metaDescription %}Site du développeur hollux{% endblock %}">
+    <!--    BOOTSTRAP -->
+    <link href="{{ asset('library/bootstrap3/css/bootstrap.min.css') }}" media="print,screen" rel="stylesheet"/>
+    <!-- CSS -->
+    <link href="{{ asset('css/hollux.css') }}" media="print,screen" rel="stylesheet"/>
+    <!-- SASS -->
+    <!-- !!!modif Sass.MIn -->
+    {# <link  href="{{ asset('css/SASS/css/holluxSass.css') }}" media="print,screen" rel="stylesheet"/>#}
+    <!--   viewport, pas de zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <!--    JQUERY -->
+    <script type="text/javascript" src="{{ asset('library/jquery/jquery.min.js') }}"></script>
+    <!--    JQUERY collection -->
+    <script type="text/javascript" src="{{ asset('library/jquery/jquery.collection.js') }}"></script>
+
+</head>
+
+
+
+<body>
+<div id="xztp">
+
+    {% set page =  app.request.attributes.get('_route') %}
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="divLogo">
+                    <a class="navbar-brand" href="{{ path('gmartin') }}">
+                        <img class="logo" src="https://www.alcyon.com/image/fill/231/120/alcyon.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-tasks"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-print"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-share-alt"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-globe"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            GMARTIN
+                        </a>
+
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="flexGmartin flex1">
+        <p>** Q1 D **</p>
+        <p>Menu général IBS Enterprise</p>
+        <p class="espace200px"></p>
+        <p>{{ "now"|date("d/m/Y") }}</p>
+        <p>{{ "now"|date("h:m:s") }}</p>
+        <p>IBSMAN</p>
+    </div>
+
+
+    <div class="body">
+        <img src="https://cdn.discordapp.com/attachments/402852578339192839/490090975587205120/bodyGmartin2.jpg"
+             alt="body" style="width:100%">
+    </div>
+
+</div>
+
+<footer class="rien">
+    <div class="flexGmartin">
+        <!-- BUTTON fx -->
+        <div class="btn btn-light">Continue</div>
+        <div class="btn btn-light">F1 Continue</div>
+        <div class="btn btn-light">F2 Continue</div>
+        <div class="btn btn-light">F3 Continue</div>
+        <div class="btn btn-light">F4 Continue</div>
+        <div class="btn btn-light">F5 Continue</div>
+        <div class="btn btn-light">F6 Continue</div>
+        <div class="btn btn-light">F7 Continue</div>
+        <div class="btn btn-light">F8 Continue</div>
+        <div class="btn btn-light">F9 Continue</div>
+        <div class="btn btn-light">F10 Continue</div>
+        <div class="btn btn-light">F11 Continue</div>
+        <div class="btn btn-light">F12 Continue</div>
+
+
+        <!-- /BUTTON fx -->
+    </div>
+</footer>
+
+<!--    POLICE -->
+<link href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic') }}"
+      rel='stylesheet' type='text/css'>
+<!-- DATATABLE CSS -->
+{#<link rel="stylesheet" href="{{ asset('css/dataTable.min.css') }}">#}
+<!-- BOOTSTRAP TOGGLE CSS -->
+{#<link href="{{ asset('bootstrap/css/bootstrap-toggle.min.css') }}" rel="stylesheet">#}
+{% block script %}
+    <!-- DATATABLE JS -->
+    {#<script type="text/javascript" src="{{ asset('scripts/dataTable.min.js') }}"></script>#}
+    <!-- BOOTSTRAP JS -->
+    <script type="text/javascript" src="{{ asset('library/bootstrap3/js/bootstrap.min.js') }}"></script>
+    <!--JS -->
+    <script type="text/javascript" src="{{ asset('js/hollux.js') }}"></script>
+
+{% endblock %}
+</body>
+
+
+<style>
+    body {
+        background-color: lightgrey;
+    }
+    .espace200px {
+        width: 200px;
+    }
+   /*       NAV      */
+
+    .navbar {
+        margin-bottom: 0px;
+    }
+    .flex1 p {
+        margin: 0 5px
+    }
+
+
+        /*      FOOTER      */
+
+    #xztp {
+        min-height: calc(100vh - 68px);
+    }
+
+    .flexGmartin {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        top:50px;
+    }
+
+    .flexGmartin .btn {
+        margin: 7px 1px;
+    }
+</style>
+
+</html>
+
+
+
