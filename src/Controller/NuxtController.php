@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\SeriesTestRepository;
 use Symfony\Component\HttpFoundation\Request;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View as View;
@@ -15,13 +16,20 @@ use Symfony\Component\HttpFoundation\Response as Response;
 class NuxtController extends FOSRestController
 {
 
+    public function __construct(SeriesTestRepository $seriesTestRepository){
+
+        $this->SeriesTestRepository = $seriesTestRepository;
+    }
+
     /**
      * @Rest\Get("/vuetest")
      * @return View
      */
     public function vuetest() :View {
 
-        $array = ['truc1', "truc2", "truc3"];
+        $array = $this->SeriesTestRepository->findAll();
+
+        /*$array = ['truc1', "truc2", "truc3"];*/
 
         return View::create($array, Response::HTTP_OK);
 
