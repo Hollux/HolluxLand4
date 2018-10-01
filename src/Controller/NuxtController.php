@@ -29,7 +29,7 @@ class NuxtController extends FOSRestController
 
         $array = $this->SeriesTestRepository->findAll();
 
-        $test = 'ùa';
+        $test = 'ùdededea';
 
         /*$array = ['truc1', "truc2", "truc3"];*/
 
