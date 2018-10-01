@@ -29,6 +29,8 @@ class NuxtController extends FOSRestController
 
         $array = $this->SeriesTestRepository->findAll();
 
+        $test = "truc";
+
         /*$array = ['truc1', "truc2", "truc3"];*/
 
         return View::create($array, Response::HTTP_OK);
